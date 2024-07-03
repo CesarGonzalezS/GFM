@@ -1,0 +1,124 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "gestion financiera",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "HelloWorldIntent",
+                    "slots": [],
+                    "samples": [
+                        "hola",
+                        "como estás",
+                        "di hola mundo",
+                        "di hola",
+                        "hola mundo"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AgregarMesIntent",
+                    "slots": [
+                        {
+                            "name": "month",
+                            "type": "AMAZON.Month"
+                        },
+                        {
+                            "name": "year",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "income",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "budget",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "Añadir mes de {month} {year} con ganancia de {income} y presupuesto de {budget}",
+                        "registrar un mes",
+                        "agregar un mes"
+                    ]
+                },
+                {
+                    "name": "AgregarGastoIntent",
+                    "slots": [
+                        {
+                            "name": "amount",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "category",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "registrar gasto de {amount}",
+                        "registrar gasto en {category}"
+                    ]
+                },
+                {
+                    "name": "ConsultarReporteIntent",
+                    "slots": [
+                        {
+                            "name": "month",
+                            "type": "AMAZON.Month"
+                        },
+                        {
+                            "name": "year",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "Mostrar reporte de {month} {year}",
+                        "Ver reporte de {month} {year}",
+                        "Consultar reporte de {month} {year}"
+                    ]
+                },
+                {
+                    "name": "ModificarMesIntent",
+                    "slots": [
+                        {
+                            "name": "month",
+                            "type": "AMAZON.Month"
+                        },
+                        {
+                            "name": "year",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "income",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "budget",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "Actualizar ganancia a {income} y presupuesto a {budget} para {month} {year}",
+                        "Cambiar ganancia y presupuesto de {month} {year}",
+                        "Modificar ganancia y presupuesto"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
